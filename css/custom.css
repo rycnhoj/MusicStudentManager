@@ -1,6 +1,6 @@
 /* John Cyr */
 
-#add-person-panel {
+#add-person-panel, #new-student-panel {
 	margin: 0 auto;
 	width: 50%;
 }
