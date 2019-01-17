@@ -1,0 +1,52 @@
+@import "../../style/variables.scss";
+
+$outer-ring: #681cfd;
+$middle-ring: #f701c5;
+$inner-ring: #f9cd25;
+
+@keyframes loading-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.addstack-loading-icon {
+  display: block;
+  position: relative;
+  width: 65px;
+  height: 65px;
+  margin: 50px auto 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: $outer-ring;
+  animation: loading-spin 2s linear infinite;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $middle-ring;
+    animation: loading-spin 3s linear infinite;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $inner-ring;
+    animation: loading-spin 1.5s linear infinite;
+  }
+}

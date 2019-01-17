@@ -1,0 +1,19 @@
+{
+  "UserDetail": {
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "disableUser": "Disable",
+    "cancel": "Cancel",
+    "userName": "User Name",
+    "email": "Email Address",
+    "active": "Is Active?",
+    "phone": "Phone",
+    "fax": "Fax",
+    "created": "Created",
+    "lastLogin": "Last Login",
+    "lastChangedPassword": "Last Changed Password"
+  },
+  "UserManifestFilter": {
+    "search": "search by name, username, and email"
+  }
+}
