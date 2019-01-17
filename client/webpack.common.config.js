@@ -33,7 +33,7 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.(js|jsx)$/, loader: 'babel-loader', include: path.join(__dirname, 'app')},
+      {test: /\.(js|jsx)$/, loader: 'babel-loader', include: path.join(__dirname, 'app'), query: {presets: ['react', 'es2015', 'stage-1']}},
       {test: /\.(scss)$/, loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader!sass-loader'})},
       {test: /\.(css)$/, loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader'})},
       {test: /\.(png|jpg|gif|eot|ttf|woff|svg|woff2)(\?.*)?$/, loader: 'url-loader?limit=1000&name=img/[name]-[hash].[ext]'},
